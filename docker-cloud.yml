@@ -1,3 +1,5 @@
   web-laravel:
-    image: mauricioweb/laravel-env
+    image: mauricioweb/blog-with-docker
+    ports:
+      - "8080:80"
    

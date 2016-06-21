@@ -1,0 +1,4 @@
+  web-laravel:
+    build: .
+    ports: 
+      - "8081:80"
