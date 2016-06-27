@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">Hello World from Brazil with Docker My Friend from Canoastec! YEAAAAAAH</div>
             </div>
         </div>
     </body>
