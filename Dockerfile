@@ -1,8 +1,8 @@
 FROM mauricioweb/laravel-env
 
-ADD .  /var/www/crm
+ADD .  /var/www/blog
 
-WORKDIR /var/www/crm/
+WORKDIR /var/www/blog/
 
 EXPOSE 80
 
