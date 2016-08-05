@@ -1,4 +1,27 @@
-  web-laravel:
-    build: .
-    ports: 
-      - "8081:80"
+version: '2'
+
+services:
+
+### PHP-FPM Container #######################################
+
+    php-fpm:
+        image: mauricioweb/php-fpm
+        volumes:
+            - .:/var/www/laravel
+        expose:
+            - "9000"
+
+### NGINX Container #######################################
+    nginx:
+        image: mauricioweb/nginx
+        working_dir: /var/www/laravel
+        tty: true
+        stdin_open: true
+        volumes:
+            - ./logs/nginx/:/var/log/nginx
+            - .:/var/www/laravel
+        ports:
+            - "80:80"
+            - "443:443"
+        links:
+            - php-fpm

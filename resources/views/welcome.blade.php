@@ -38,7 +38,11 @@
     <body>
         <div class="container">
             <div class="content">
+<<<<<<< HEAD
                 <div class="title">Hello World from Brazil with Docker My Friend from Canoastec! Updated to 1.3</div>
+=======
+                <div class="title">Hello World from Brazil with Docker My Friend from Canoastec! YEAAAAAAH</div>
+>>>>>>> 3a42b6589a9edfde6b680bf67d4cc92063065f40
             </div>
         </div>
     </body>
